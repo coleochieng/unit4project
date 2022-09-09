@@ -4,6 +4,10 @@
 import sendRequest from './send-request';
 const BASE_URL = '/api/users';
 
+export function getAll() {
+  return sendRequest(BASE_URL)
+}
+
 export function search(searchTerm) {
   return sendRequest(BASE_URL, 'POST', searchTerm);
 }
