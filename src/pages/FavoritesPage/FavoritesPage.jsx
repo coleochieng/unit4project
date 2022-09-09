@@ -1,12 +1,12 @@
+
 export default function FavoritesPage({  }) {
-    //const [showLogin, setShowLogin] = useState(true);
     
     return (
-      <div>
-        <h1>Mood Muse</h1>
-        
-      </div>
-    );
+        <div>
+          <h1>favorites</h1>
+          
+        </div>
+      );
   }
 
 // export default function FavoritesPage({  }) {

@@ -1,9 +1,8 @@
 export default function GenrePage({  }) {
-    //const [showLogin, setShowLogin] = useState(true);
     
     return (
       <div>
-        <h1>Mood Muse</h1>
+        <h1>genres</h1>
         
       </div>
     );
