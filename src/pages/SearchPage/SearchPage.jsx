@@ -6,7 +6,8 @@ export default function SearchPage({  }) {
 
     const [searchTerm, setSearchTerm] = useState("");
     // useEffect(()=>{
-        async function searchYoutube(){
+        async function searchYoutube(evt){
+            evt.preventDefault();
             const results = await videoAPI.search(searchTerm)
         }
     // })

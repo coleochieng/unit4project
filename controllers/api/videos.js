@@ -3,8 +3,9 @@ module.exports = {
    getVideos
 
   };
-  const BASE_URL = 'https://www.googleapis.com/youtube/v3'
+  const BASE_URL = 'https://www.googleapis.com/youtube/v3/search'
   async function getVideos(req,res) {
+    console.log('hi');
     const options = {
         method: 'POST',
         headers: {
@@ -12,7 +13,7 @@ module.exports = {
             'Authorization': 'Bearer '
         }
     }
-    const youtubeData = await fetch(BASE_URL, options=).then(res => res.json());
+    const youtubeData = await fetch(BASE_URL, options).then(res => res.json());
     console.log(youtubeData);
   };
 
