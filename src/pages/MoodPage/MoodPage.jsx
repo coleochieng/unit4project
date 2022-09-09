@@ -11,7 +11,7 @@ export default function MoodPage({  }) {
         <button className="calm">calm</button>
         <button className="high">high</button>
         <button className="pensive">pensive</button>
-        <button className="remorseful">remorseful</button>
+        <button className="sleepy">sleepy</button>
         <button className="hostile">hostile</button>
         <button className="melancholic">melancholic</button>
         <button className="positive">positive</button>
