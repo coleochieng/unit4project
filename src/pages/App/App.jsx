@@ -22,8 +22,13 @@ export default function App() {
           <NavBar user={user} setUser={setUser} />
           <Routes>
             {/* Route components in here */}
-            <Route path='/' element={<SearchPage />} />
-            {/* <Route path='/orders' element={<OrderHistoryPage />} /> */}
+            <Route path='/' element={<AuthPage />} />
+            <Route path='/favorites' element={<FavoritesPage />} />
+            <Route path='/genre' element={<GenrePage />} />
+            <Route path='/genre' element={<GenrePage />} />
+            <Route path='/genre' element={<GenrePage />} />
+            <Route path='/genre' element={<GenrePage />} />
+            <Route path='/genre' element={<GenrePage />} />
           </Routes>
         </>
         :
