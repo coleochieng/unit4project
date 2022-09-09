@@ -1,0 +1,37 @@
+.charged {
+    background-color: #FFA500;
+}
+
+.romantic {
+    background-color: #DB7093;  
+}
+
+.playful {
+    background-color: #9932CC;  
+}
+
+.calm {
+    background-color: #00BFFF;  
+}
+.high {
+    background-color: #FFB6C1;  
+}
+
+.pensive {
+    background-color: #808080;  
+}
+
+.remorseful {
+    background-color: #4682B4;  
+}
+
+.hostile {
+    background-color: #FF4500;  
+}
+.melancholic {
+    background-color: #2F4F4F;  
+}
+
+.positive {
+    background-color: #FFD700;  
+}

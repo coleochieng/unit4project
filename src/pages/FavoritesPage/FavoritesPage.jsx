@@ -1,9 +1,11 @@
+import "../FavoritesPage/FavoritesPage.css";
 
 export default function FavoritesPage({  }) {
     
     return (
-        <div>
+        <div className="favorites">
           <h1>favorites</h1>
+          <button>add song</button>
           
         </div>
       );

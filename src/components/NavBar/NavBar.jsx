@@ -10,11 +10,11 @@ export default function NavBar({ user, setUser }) {
 
   return (
     <nav>
-      welcome, {user.name}
+      <div style={{ color: "white"}}>welcome, {user.name}</div>
       &nbsp; | &nbsp;
-      <Link to='/mood'>by mood</Link>
+      <Link to='/mood'>moods</Link>
       &nbsp; | &nbsp;
-      <Link to='/genre'>by genre</Link>
+      <Link to='/genre'>genres</Link>
       &nbsp; | &nbsp;
       <Link to='/favorites'>favorites</Link>
       &nbsp; | &nbsp;
