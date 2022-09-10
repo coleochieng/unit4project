@@ -35,6 +35,7 @@ export default function App() {
             <Route path='/login' element={<LoginForm />} />
             <Route path='/signup' element={<SignUpForm />} />
             <Route path='/newsongform' element={<NewSongForm />} />
+            <Route path='/rock' element={<RockPage />} />
           </Routes>
         </>
         :
