@@ -12,6 +12,8 @@ import NavBar from '../../components/NavBar/NavBar';
 import './App.css';
 import SearchPage from '../SearchPage/SearchPage';
 import LandingPage from '../LandingPage/LandingPage';
+import LoginForm from '../../components/LoginForm/LoginForm';
+import SignUpForm from '../../components/SignUpForm/SignUpForm';
 
 export default function App() {
   const [user, setUser] = useState(getUser());
@@ -29,6 +31,8 @@ export default function App() {
             <Route path='/mood' element={<MoodPage />} />
             <Route path='/profile' element={<ProfilePage />} />
             <Route path='/search' element={<SearchPage />} />
+            <Route path='/login' element={<LoginForm />} />
+            <Route path='/signup' element={<SignUpForm />} />
           </Routes>
         </>
         :

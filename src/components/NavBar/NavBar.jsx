@@ -18,7 +18,7 @@ export default function NavBar({ user, setUser }) {
       &nbsp; | &nbsp;
       <Link to='/favorites'>favorites</Link>
       &nbsp; | &nbsp;
-      <Link to='' onClick={handleLogOut}>log out</Link>
+      <Link to='/' onClick={handleLogOut}>log out</Link>
     </nav>
   );
 }
