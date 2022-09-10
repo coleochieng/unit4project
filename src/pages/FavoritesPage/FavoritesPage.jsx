@@ -1,11 +1,13 @@
 import "../FavoritesPage/FavoritesPage.css";
+import "../NewSongForm/NewSongForm";
+import NewSongForm from "../NewSongForm/NewSongForm";
 
 export default function FavoritesPage({  }) {
     
     return (
         <div className="favorites">
           <h1>favorites</h1>
-          <button>add song</button>
+          <button onClick={NewSongForm}>add song</button>
           
         </div>
       );

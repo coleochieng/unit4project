@@ -14,6 +14,7 @@ import SearchPage from '../SearchPage/SearchPage';
 import LandingPage from '../LandingPage/LandingPage';
 import LoginForm from '../../components/LoginForm/LoginForm';
 import SignUpForm from '../../components/SignUpForm/SignUpForm';
+import NewSongForm from '../NewSongForm/NewSongForm';
 
 export default function App() {
   const [user, setUser] = useState(getUser());
@@ -33,6 +34,7 @@ export default function App() {
             <Route path='/search' element={<SearchPage />} />
             <Route path='/login' element={<LoginForm />} />
             <Route path='/signup' element={<SignUpForm />} />
+            <Route path='/newsongform' element={<NewSongForm />} />
           </Routes>
         </>
         :
