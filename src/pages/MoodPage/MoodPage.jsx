@@ -5,19 +5,19 @@ export default function MoodPage({  }) {
     return (
       <div>
         <h1>moods</h1>
-        <button className="charged">charged</button>
-        <button className="romantic">romantic</button>
-        <button className="playful">playful</button> 
+        <a href="/charged"><button className="charged">charged</button></a>
+        <a href="/romantic"><button className="romantic">romantic</button></a>
+        <a href="/playful"><button className="playful">playful</button></a>
         <br />
-        <button className="calm">calm</button>
-        <button className="high">high</button>
+        <a href="/calm"><button className="calm">calm</button></a>
+        <a href="/high"><button className="high">high</button></a>
         <br />
-        <button className="pensive">pensive</button>
-        <button className="sleepy">sleepy</button>
-        <button className="hostile">hostile</button>
+        <a href="/pensive"><button className="pensive">pensive</button></a>
+        <a href="/sleepy"><button className="sleepy">sleepy</button></a>
+        <a href="/hostile"><button className="hostile">hostile</button></a>
         <br />
-        <button className="melancholic">melancholic</button>
-        <button className="positive">positive</button>
+        <a href="/melancholic"><button className="melancholic">melancholic</button></a>
+        <a href="/positive"><button className="positive">positive</button></a>
         
       </div>
     );

@@ -1,16 +1,17 @@
 import "../GenrePage/GenrePage.css";
 
+
 export default function GenrePage({  }) {
     
     return (
       <div>
         <h1>genres</h1>
-        <Link to="/rock"><button className="rock">rock</button></Link>
-        <button className="pop">pop</button>
-        <button className="hip-hop">hip-hop</button>
+        <a href="/rock"><button className="rock">rock</button></a>
+        <a href="/pop"><button className="pop">pop</button></a>
+        <a href="/hip-hop"><button className="hip-hop">hip-hop</button></a>
         <br />
-        <button className="rnb">rnb</button>
-        <button className="country">country</button>
+        <a href="/rnb"><button className="rnb">rnb</button></a>
+        <a href="/country"><button className="country">country</button></a>
 
       </div>
     );

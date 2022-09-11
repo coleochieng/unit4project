@@ -15,6 +15,22 @@ import LandingPage from '../LandingPage/LandingPage';
 import LoginForm from '../../components/LoginForm/LoginForm';
 import SignUpForm from '../../components/SignUpForm/SignUpForm';
 import NewSongForm from '../NewSongForm/NewSongForm';
+import RockPage from '../Genres/RockPage/RockPage';
+import PopPage from '../Genres/PopPage/PopPage';
+import HipHopPage from '../Genres/HipHopPage/HipHopPage';
+import RnbPage from '../Genres/RnbPage/RnbPage';
+import CountryPage from '../Genres/CountryPage/CountryPage';
+import ChargedPage from "../Moods/ChargedPage/ChargedPage";
+import RomanticPage from "../Moods/RomanticPage/RomanticPage";
+import PlayfulPage from "../Moods/PlayfulPage/PlayfulPage";
+import CalmPage from "../Moods/CalmPage/CalmPage";
+import HighPage from "../Moods/HighPage/HighPage";
+import PensivePage from "../Moods/PensivePage/PensivePage";
+import SleepyPage from "../Moods/SleepyPage/SleepyPage";
+import HostilePage from "../Moods/HostilePage/HostilePage";
+import MelancholicPage from "../Moods/MelancholicPage/MelancholicPage";
+import PositivePage from "../Moods/PositivePage/PositivePage";
+
 
 export default function App() {
   const [user, setUser] = useState(getUser());
@@ -36,6 +52,20 @@ export default function App() {
             <Route path='/signup' element={<SignUpForm />} />
             <Route path='/newsongform' element={<NewSongForm />} />
             <Route path='/rock' element={<RockPage />} />
+            <Route path='/pop' element={<PopPage />} />
+            <Route path='/hip-hop' element={<HipHopPage />} />
+            <Route path='/rnb' element={<RnbPage />} />
+            <Route path='/country' element={<CountryPage />} />
+            <Route path='/charged' element={<ChargedPage />} />
+            <Route path='/romantic' element={<RomanticPage />} />
+            <Route path='/playful' element={<PlayfulPage />} />
+            <Route path='/calm' element={<CalmPage />} />
+            <Route path='/high' element={<HighPage />} />
+            <Route path='/pensive' element={<PensivePage />} />
+            <Route path='/sleepy' element={<SleepyPage />} />
+            <Route path='/hostile' element={<HostilePage />} />
+            <Route path='/melancholic' element={<MelancholicPage />} />
+            <Route path='/positive' element={<PositivePage />} />
           </Routes>
         </>
         :
