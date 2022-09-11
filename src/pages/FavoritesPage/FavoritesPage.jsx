@@ -1,13 +1,14 @@
 import "../FavoritesPage/FavoritesPage.css";
 import "../NewSongForm/NewSongForm";
 import NewSongForm from "../NewSongForm/NewSongForm";
+import {Link} from "react-router-dom";
 
 export default function FavoritesPage({  }) {
     
     return (
         <div className="favorites">
           <h1>favorites</h1>
-          <button onClick={NewSongForm}>add song</button>
+          <a href="/newsongform"><button>add song</button></a>
           
         </div>
       );

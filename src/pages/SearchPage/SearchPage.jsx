@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
-import * as videoAPI from '../../utilities/videos-api';
+import * as videoAPI from '../../utilities/songs-api';
 
 export default function SearchPage({  }) {
 

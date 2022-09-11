@@ -8,14 +8,20 @@ export default function NewSongForm({ addSong }) {
     genre: "rock"
   });
 
-  function handleAddSong(evt) {
-    evt.preventDefault();
+  async function handleAddSong(evt) {
+    try {
+      evt.preventDefault();
+    const song = await songsAPI.addSong();
     addSong(formData);
     setFormData({
       name: "",
       mood: "charged",
       genre: "rock"
-    });
+    })
+    } catch {
+
+    }
+    
   }
 
   function handleChange(evt) {

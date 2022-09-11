@@ -2,7 +2,7 @@
 // communications between client (browser)
 // and the server
 import sendRequest from './send-request';
-const BASE_URL = '/api/users';
+const BASE_URL = '/api/songs';
 
 export function getAll() {
   return sendRequest(BASE_URL)
