@@ -2,10 +2,10 @@
 
 const express = require('express');
 const router = express.Router();
-const videosCtrl = require('../../controllers/api/videos');
+const songsCtrl = require('../../controllers/api/songs');
 const ensureLoggedIn = require('../../config/ensureLoggedIn');
 
-// POST /api/users
-router.post('/', videosCtrl.getVideos)
+// POST /api/songs
+router.post('/new', songsCtrl.addSong)
 
 module.exports = router;

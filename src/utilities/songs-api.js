@@ -4,18 +4,18 @@
 import sendRequest from './send-request';
 const BASE_URL = '/api/songs';
 
-export function getAll() {
-  return sendRequest(BASE_URL)
+export function addSong(data) {
+  return sendRequest(`${BASE_URL}/new`, 'POST', data)
 }
 
-export function search(searchTerm) {
-  return sendRequest(BASE_URL, 'POST', searchTerm);
-}
+// export function search(searchTerm) {
+//   return sendRequest(BASE_URL, 'POST', searchTerm);
+// }
 
-export function login(credentials) {
-  return sendRequest(`${BASE_URL}/login`, 'POST', credentials);
-}
+// export function login(credentials) {
+//   return sendRequest(`${BASE_URL}/login`, 'POST', credentials);
+// }
 
-export function checkToken() {
-  return sendRequest(`${BASE_URL}/check-token`);
-}
+// export function checkToken() {
+//   return sendRequest(`${BASE_URL}/check-token`);
+// }
