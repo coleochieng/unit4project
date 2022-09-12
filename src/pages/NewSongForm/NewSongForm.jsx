@@ -1,4 +1,7 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import * as songsAPI from "../../utilities/songs-api";
+//import * as data from
 //import "../../NewSongForm/NewSongForm.css";
 
 export default function NewSongForm({ addSong }) {
@@ -8,16 +11,13 @@ export default function NewSongForm({ addSong }) {
     genre: "rock"
   });
 
+  const navigate = useNavigate();
   async function handleAddSong(evt) {
     try {
       evt.preventDefault();
-    const song = await songsAPI.addSong();
-    addSong(formData);
-    setFormData({
-      name: "",
-      mood: "charged",
-      genre: "rock"
-    })
+    const song = await songsAPI.addSong(formData);
+    setFormData(song)
+    navigate('/')
     } catch {
 
     }
@@ -37,6 +37,7 @@ export default function NewSongForm({ addSong }) {
         onChange={handleChange}
         placeholder="name - artist"
         name="name"
+        required
       />
       <label>mood</label>
       <select value={formData.mood} onChange={handleChange} name="mood">
