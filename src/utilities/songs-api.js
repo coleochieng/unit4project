@@ -8,6 +8,10 @@ export function addSong(data) {
   return sendRequest(`${BASE_URL}/new`, 'POST', data)
 }
 
+export function getAllSongs() {
+  return sendRequest(BASE_URL)
+}
+
 // export function search(searchTerm) {
 //   return sendRequest(BASE_URL, 'POST', searchTerm);
 // }

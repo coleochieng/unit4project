@@ -5,7 +5,7 @@ export default function MoodPage({  }) {
     return (
       <div>
         <h1>moods</h1>
-        <a href="/charged"><button className="charged">charged</button></a>
+        <a href="/mood/charged"><button className="charged">charged</button></a>
         <a href="/romantic"><button className="romantic">romantic</button></a>
         <a href="/playful"><button className="playful">playful</button></a>
         <br />

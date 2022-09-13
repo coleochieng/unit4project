@@ -10,14 +10,6 @@ export default function LandingPage({ setUser }) {
       <h1>mood muse</h1>
       <button onClick={SignUpForm}>sign up</button>
       <button onClick={LoginForm}>log in</button>
-      <button onClick={() => setShowLogin(!showLogin)}>
-        {showLogin ? 'Sign Up' : 'Log In'}
-      </button>
-      { showLogin ?
-          <LoginForm setUser={setUser} />
-          :
-          <SignUpForm setUser={setUser} />
-      }
     </main>
   );
 }

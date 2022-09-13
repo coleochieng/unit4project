@@ -1,8 +1,19 @@
 import "../GenrePage/GenrePage.css";
 
+import { useState } from "react";
+import * as songAPI from "../../utilities/songs-api";
 
-export default function GenrePage({  }) {
-    
+export default function GenrePage({ songs }) {
+  // const [songs, setSongs] = useState([]);
+  //   useEffect(function(){
+  //     async function getSongs() {
+  //       const song = await songAPI.getAllSongs()
+  //       setSongs(song)
+  //     }
+  //     getSongs();
+  //   },[])
+
+    console.log(songs);
     return (
       <div>
         <h1>genres</h1>

@@ -1,8 +1,8 @@
 const Song = require('../../models/song');
 
 module.exports = {
-   addSong
-
+   addSong,
+    getSongs
   };
 
   async function addSong(req, res){
@@ -11,6 +11,17 @@ module.exports = {
     song.save()
     res.json(song)
   }
+
+  async function getSongs(req, res){
+    const songs = await Song.find({})
+    console.log(songs)
+    //song.user = req.user._id 
+    res.json(songs)
+  }
+
+
+
+
 
 
   
