@@ -31,6 +31,8 @@ import SleepyPage from "../Moods/SleepyPage/SleepyPage";
 import HostilePage from "../Moods/HostilePage/HostilePage";
 import MelancholicPage from "../Moods/MelancholicPage/MelancholicPage";
 import PositivePage from "../Moods/PositivePage/PositivePage";
+import SignUpPage from '../SignUpPage/SignUpPage';
+import LoginPage from '../LoginPage/LoginPage';
 
 
 export default function App() {
@@ -57,8 +59,8 @@ export default function App() {
             <Route path='/mood' element={<MoodPage songs={songs} />} />
             <Route path='/profile' element={<ProfilePage />} />
             <Route path='/search' element={<SearchPage />} />
-            <Route path='/login' element={<LoginForm />} />
-            <Route path='/signup' element={<SignUpForm />} />
+            <Route path='/login' element={<LoginPage />} />
+            <Route path='/signup' element={<SignUpPage/>} />
             <Route path='/newsongform' element={<NewSongForm />} />
             <Route path='/rock' element={<RockPage songs={songs} />} />
             <Route path='/pop' element={<PopPage songs={songs} />} />

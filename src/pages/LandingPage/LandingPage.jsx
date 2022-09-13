@@ -2,14 +2,13 @@ import { useState } from 'react';
 import SignUpForm from '../../components/SignUpForm/SignUpForm';
 import LoginForm from '../../components/LoginForm/LoginForm';
 
-export default function LandingPage({ setUser }) {
-  const [showLogin, setShowLogin] = useState(true);
+export default function LandingPage() {
   
   return (
     <main>
       <h1>mood muse</h1>
-      <button onClick={SignUpForm}>sign up</button>
-      <button onClick={LoginForm}>log in</button>
+      <a href ='/signup'><button>sign up</button></a>
+      <a href ='/login'><button>log in</button></a>
     </main>
   );
 }
