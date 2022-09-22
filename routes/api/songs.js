@@ -8,5 +8,6 @@ const ensureLoggedIn = require('../../config/ensureLoggedIn');
 // POST /api/songs
 router.post('/new', songsCtrl.addSong)
 router.get('/', songsCtrl.getSongs)
+router.delete('/:id', songsCtrl.deleteSong)
 
 module.exports = router;

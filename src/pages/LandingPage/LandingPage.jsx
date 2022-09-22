@@ -1,14 +1,33 @@
 import { useState } from 'react';
-import SignUpForm from '../../components/SignUpForm/SignUpForm';
-import LoginForm from '../../components/LoginForm/LoginForm';
+import SignUpForm from '../../components/SignUpForm/SignUpForm';import LoginForm from '../../components/LoginForm/LoginForm';
+import { set } from 'mongoose';
 
 export default function LandingPage() {
-  
+  const [showLogin, setShowLogin] = useState(false);
+  const [user, setUser] = useState();
+
+  const [showSignUp, setShowSignUp] = useState(false);
+
+  const openForm = trigger=>{
+    if(trigger==='login'){
+      setShowLogin(true);
+    }else{
+      setShowSignUp(true);
+    }
+  }
+
   return (
     <main>
-      <h1>mood muse</h1>
-      <a href ='/signup'><button>sign up</button></a>
-      <a href ='/login'><button>log in</button></a>
+      <h1 stlye={{color: 'white'}}>mood muse</h1>
+      <button onClick={openForm('signup')}>sign up</button><br/>
+      <button onClick={openForm('login')}>log in</button>
+      
+       { showLogin &&
+           <LoginForm setUser={setUser} />
+       }
+       { showSignUp &&
+           <SignUpForm setUser={setUser} />
+       }
     </main>
   );
 }
