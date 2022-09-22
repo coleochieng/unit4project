@@ -1,56 +1,37 @@
 import { useState } from 'react';
-import SignUpForm from '../../components/SignUpForm/SignUpForm';import LoginForm from '../../components/LoginForm/LoginForm';
-import { set } from 'mongoose';
+import SignUpForm from '../../components/SignUpForm/SignUpForm';
+import LoginForm from '../../components/LoginForm/LoginForm';
 
-export default function LandingPage() {
+export default function LandingPage({ setUser }) {
   const [showLogin, setShowLogin] = useState(false);
-  const [user, setUser] = useState();
+  const [showSignUp, setshowSignUp] = useState(false);
 
-  const [showSignUp, setShowSignUp] = useState(false);
-
-  const openForm = trigger=>{
-    if(trigger==='login'){
+  const changeForm = (options)=>{
+    if(options === 'login'){
       setShowLogin(true);
+      setshowSignUp(false);
     }else{
-      setShowSignUp(true);
+      setShowLogin(false);
+      setshowSignUp(true);
     }
   }
-
+  
   return (
     <main>
-      <h1 stlye={{color: 'white'}}>mood muse</h1>
-      <button onClick={openForm('signup')}>sign up</button><br/>
-      <button onClick={openForm('login')}>log in</button>
+      <h1>Mood Muse</h1>
+      <button onClick={() => changeForm('login')}>
+        {'Log In'}
+      </button>
+
+      <button onClick={() => changeForm('signin')}>
+        {'Sign Up'}
+      </button>
       
-       { showLogin &&
-           <LoginForm setUser={setUser} />
-       }
-       { showSignUp &&
-           <SignUpForm setUser={setUser} />
-       }
+
+      { showLogin && <LoginForm setUser={setUser} />}
+
+      { showSignUp && <SignUpForm setUser={setUser} />}
+
     </main>
   );
 }
-
-
-// import { useState } from 'react';
-// import SignUpForm from '../../components/SignUpForm/SignUpForm';
-// import LoginForm from '../../components/LoginForm/LoginForm';
-
-// export default function LandingPage({ setUser }) {
-//   const [showLogin, setShowLogin] = useState(true);
-  
-//   return (
-//     <main>
-//       <h1>Mood Muse</h1>
-//       <button onClick={() => setShowLogin(!showLogin)}>
-//         {showLogin ? 'Sign Up' : 'Log In'}
-//       </button>
-//       { showLogin ?
-//           <LoginForm setUser={setUser} />
-//           :
-//           <SignUpForm setUser={setUser} />
-//       }
-//     </main>
-//   );
-// }

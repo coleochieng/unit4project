@@ -169,3 +169,9 @@ button[type="submit"] {
 h1 {
   color: #FFFFFF;
 }
+
+.form-holder{
+  display: flex;
+  justify-content: center;
+  padding-top: 4rem;
+}
